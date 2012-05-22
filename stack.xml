@@ -1,0 +1,9 @@
+<stack>
+  <description brief="deprecated_xsens_mtig">  A deprecated modified version of the  lse_xsens_mti package with added functionalitly to work with the mti-g sensor.</description>
+  <author>Original author Gonçalo Cabrita, author Benoit Lescot</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/deprecated_xsens_mtig</url>
+  <depend stack="ros" />
+
+</stack>

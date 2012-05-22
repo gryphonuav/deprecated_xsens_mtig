@@ -1,0 +1,28 @@
+pub_rate: 1.0 # Optional
+base_path: '' # Optional, prepended to all diagnostic output
+
+analyzers:
+  xsens_mtig:
+    type: GenericAnalyzer
+    path: xsens_mtig
+    contains: [
+      'Diagnostic IMU',
+      'Self Test',
+      'XKF Valid',
+      'GPS Fix',
+      'Number of satellite']
+  Hokuyo:
+    type: GenericAnalyzer
+    path: Hokuyo
+    startswith: hokuyo
+    find_and_remove_prefix: hokuyo  
+    contains: [
+      'hokuyo: scan topic status',
+      'hokuyo: Driver Status']  
+  Joystick:
+    type: GenericAnalyzer
+    path: Joystick
+    find_and_remove_prefix: joy_node
+    contains: [
+      'Joystick Driver Status']      
+
